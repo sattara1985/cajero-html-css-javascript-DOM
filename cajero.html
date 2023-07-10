@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cajero</title>
+</head>
+<body>
+    <!--DOM-->
+    <div>
+        <div>
+            <h1 id="saludo"></h1>
+            <button id="cerrar">Cerrar</button>
+        </div>
+        <input id="cantidad_deposito" class="input"     placeholder="Cantidad a depositar"
+        type="number">
+        <hr/>
+        <button id="boton_deposito" class="button"  type="button">Depositar</button>
+        <button id="boton_retiro" class="button"  type="button">Retirar</button>
+        <!--mala practica-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="notification is-link">
+        <button class="delete"></button>
+            <span id="tag_cuenta">Cantidad en tu cuenta:</span>
+
+        </div>
+        <div id="notification" class="notification is-danger hidden" >
+            <button class="delete"></button>
+                <span ></span>
+    
+        </div>
+    </div>
+    
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
